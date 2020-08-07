@@ -1,0 +1,38 @@
+[
+  {
+    "slug": "penguin-statistics",
+    "title": "Penguin Statistics",
+    "subtitle": "Penguin Statistics is a website that serves as a place where players could upload drops from game \"Arknights\" (by Hypergryph) for us to generate statistical data and deliver such data in intuitive ways for players to query and reference with.",
+    "hero": "https://penguin.upyun.galvincdn.com/preview.jpg",
+    "attachments": [
+      {
+        "type": "hyperlink",
+        "content": "https://penguin-stats.cn/?utm_source=galvingao-personal&utm_medium=personal-website"
+      }
+    ]
+  },
+  {
+    "slug": "penguin-statistics2",
+    "title": "Penguin Statistics",
+    "subtitle": "Penguin Statistics is a website that serves as a place where players could upload drops from game \"Arknights\" (by Hypergryph) for us to generate statistical data and deliver such data in intuitive ways for players to query and reference with.",
+    "hero": "https://penguin.upyun.galvincdn.com/preview.jpg",
+    "attachments": [
+      {
+        "type": "hyperlink",
+        "content": "https://penguin-stats.cn/?utm_source=galvingao-personal&utm_medium=personal-website"
+      }
+    ]
+  },
+  {
+    "slug": "penguin-statistics3",
+    "title": "Penguin Statistics",
+    "subtitle": "Penguin Statistics is a website that serves as a place where players could upload drops from game \"Arknights\" (by Hypergryph) for us to generate statistical data and deliver such data in intuitive ways for players to query and reference with.",
+    "hero": "https://penguin.upyun.galvincdn.com/preview.jpg",
+    "attachments": [
+      {
+        "type": "hyperlink",
+        "content": "https://penguin-stats.cn/?utm_source=galvingao-personal&utm_medium=personal-website"
+      }
+    ]
+  }
+]
