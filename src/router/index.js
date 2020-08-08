@@ -8,9 +8,9 @@ Vue.use(VueRouter)
 const router = new VueRouter({
   mode: 'history',
   base: process.env.BASE_URL,
-  scrollBehavior() { // params: (to, from, savedPosition)
-    return { x: 0, y: 0 }
-  },
+  // scrollBehavior() { // params: (to, from, savedPosition)
+  //   return { x: 0, y: 0 }
+  // },
   routes: [
     {
       path: '/',
@@ -26,7 +26,7 @@ const router = new VueRouter({
       name: 'Projects',
       component: Projects,
       meta: {
-        icon: 'mdi-list',
+        icon: 'mdi-view-list',
         i18n: 'menu.projects'
       },
       // children: [

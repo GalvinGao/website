@@ -1,37 +1,79 @@
 [
   {
     "slug": "penguin-statistics",
-    "title": "Penguin Statistics",
-    "subtitle": "Penguin Statistics is a website that serves as a place where players could upload drops from game \"Arknights\" (by Hypergryph) for us to generate statistical data and deliver such data in intuitive ways for players to query and reference with.",
+    "title_i18n": {
+      "en": "Penguin Statistics",
+      "zh": "企鹅物流数据统计"
+    },
+    "subtitle_i18n": {
+      "en": "Penguin Statistics is a website that serves as a place where players could upload drops from game \"Arknights\" (by Hypergryph) for us to generate statistical data and deliver such data in intuitive ways for players to query and reference with",
+      "zh": "企鹅物流数据统计（Penguin Statistics）致力于对鹰角网络旗下游戏「明日方舟」内各素材进行掉率统计并对统计数据进行相关可视化与分析"
+    },
     "hero": "https://penguin.upyun.galvincdn.com/preview.jpg",
     "attachments": [
       {
         "type": "hyperlink",
+        "icon": "mdi-link-box",
+        "color": "primary",
+        "title_i18n": {
+          "en": "Website",
+          "zh": "网站"
+        },
         "content": "https://penguin-stats.cn/?utm_source=galvingao-personal&utm_medium=personal-website"
+      },
+      {
+        "type": "hyperlink",
+        "icon": "mdi-github-circle",
+        "color": "secondary",
+        "title_i18n": {
+          "en": "Source",
+          "zh": "源代码"
+        },
+        "content": "https://github.com/penguin-statistics/frontend-v2"
       }
     ]
   },
   {
-    "slug": "penguin-statistics2",
-    "title": "Penguin Statistics",
-    "subtitle": "Penguin Statistics is a website that serves as a place where players could upload drops from game \"Arknights\" (by Hypergryph) for us to generate statistical data and deliver such data in intuitive ways for players to query and reference with.",
+    "slug": "wuhan-support",
+    "title_i18n": {
+      "en": "covid-19.red",
+      "zh": "covid-19.red"
+    },
+    "subtitle_i18n": {
+      "en": "covid-19.red is a multi-dimensional information platform for people and medical institutions both in and out the COVID-19 epidemic area",
+      "zh": "面向 COVID-19 疫区内外民众和医疗机构的多维度信息整合平台"
+    },
     "hero": "https://penguin.upyun.galvincdn.com/preview.jpg",
     "attachments": [
       {
         "type": "hyperlink",
-        "content": "https://penguin-stats.cn/?utm_source=galvingao-personal&utm_medium=personal-website"
-      }
-    ]
-  },
-  {
-    "slug": "penguin-statistics3",
-    "title": "Penguin Statistics",
-    "subtitle": "Penguin Statistics is a website that serves as a place where players could upload drops from game \"Arknights\" (by Hypergryph) for us to generate statistical data and deliver such data in intuitive ways for players to query and reference with.",
-    "hero": "https://penguin.upyun.galvincdn.com/preview.jpg",
-    "attachments": [
+        "icon": "mdi-link-box",
+        "color": "primary",
+        "title_i18n": {
+          "en": "Website",
+          "zh": "网站"
+        },
+        "content": "https://covid-19.red/?utm_source=galvingao-personal&utm_medium=personal-website"
+      },
       {
         "type": "hyperlink",
-        "content": "https://penguin-stats.cn/?utm_source=galvingao-personal&utm_medium=personal-website"
+        "icon": "mdi-account-multiple",
+        "color": "orange",
+        "title_i18n": {
+          "en": "Org",
+          "zh": "团队主页"
+        },
+        "content": "https://wuhan.support"
+      },
+      {
+        "type": "hyperlink",
+        "icon": "mdi-github-circle",
+        "color": "secondary",
+        "title_i18n": {
+          "en": "Source",
+          "zh": "源代码"
+        },
+        "content": "https://github.com/wuhan-support"
       }
     ]
   }

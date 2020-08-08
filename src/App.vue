@@ -6,12 +6,40 @@
       class="safe-area--navigation-drawer"
       width="300px"
     >
-      <Logo />
       <v-list
         dense
         nav
         class="safe-area--navigation"
       >
+        <v-list-item
+          @click="$router.push({name: 'Home'})"
+        >
+          <v-list-item-content>
+            <v-list-item-title class="title py-4 text-center">
+              <v-avatar
+                :size="80"
+                class="mb-4"
+              >
+                <v-img
+                  :src="require('@/assets/avatar_serif.jpg')"
+                  :aspect-ratio="1"
+                  height="80"
+                  class="mx-auto logo"
+                  contain
+                />
+              </v-avatar>
+              <h2 class="overline text-center">
+                the one the only
+              </h2>
+              <h1 class="title text-center">
+                高逸扬 / Galvin Gao
+              </h1>
+            </v-list-item-title>
+          </v-list-item-content>
+        </v-list-item>
+
+        <v-divider class="mb-1" />
+        
         <Navigation
           v-for="route in routes"
           :key="route.name"
@@ -60,7 +88,7 @@
       <!--        color="deep-purple accent-4"-->
       <!--      />-->
     </v-app-bar>
-    <v-content
+    <v-main
       class="safe-area--v-content"
       style="margin-top: 72px"
     >
@@ -71,7 +99,7 @@
         <router-view />
       </transition>
       <Footer />
-    </v-content>
+    </v-main>
   </v-app>
 </template>
 
@@ -96,3 +124,9 @@ export default {
   },
 }
 </script>
+
+<style scoped>
+  .logo {
+    filter: drop-shadow(0 0 5px rgba(0, 0, 0, .5));
+  }
+</style>

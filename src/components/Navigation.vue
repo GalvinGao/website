@@ -2,7 +2,7 @@
   <v-list-item
     v-if="!route.children || route.meta.forceSingle"
     :key="route.name"
-    :class="route.path === $route.path ? activeClass : ''"
+    :class="route.name === $route.name ? activeClass : ''"
     :two-line="!!route.meta.twoLine"
     :to="{name: route.name}"
   >

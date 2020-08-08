@@ -2,7 +2,7 @@
   <v-parallax
     dark
     :src="require('@/assets/hero.jpg')"
-    height="700"
+    :height="$vuetify.breakpoint.smAndDown ? 550 : 700"
     class="elevation-12"
   >
     <v-row
@@ -19,7 +19,7 @@
       >
         <v-avatar
           size="256px"
-          class="glow bl-lighten"
+          class="glow"
         >
           <v-img
             :src="require('@/assets/avatar.jpeg')"
@@ -40,7 +40,9 @@
         <h1 class="display-3 font-weight-light mb-3 ml-n1">
           Galvin Gao
         </h1>
-        <h2 class="subheading" />
+        <h2 class="subheading">
+          A {{ injection }} years old coding enthusiast and a humorous human being.
+        </h2>
       </v-col>
     </v-row>
   </v-parallax>
@@ -48,7 +50,12 @@
 
 <script>
 export default {
-  name: "Hero"
+  name: "Hero",
+  computed: {
+    injection () {
+      return "{{ new Date().getFullYear() - 2002 }}"
+    }
+  },
 }
 </script>
 

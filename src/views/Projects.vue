@@ -1,12 +1,13 @@
 <template>
-  <div class="about">
-    <h1>This is an about page</h1>
-  </div>
+  <v-container class="fill-height flex-column align-center justify-center">
+    <h1>Projects List Page</h1>
+    <span class="overline">
+      // still under construction //
+    </span>
+  </v-container>
 </template>
 
 <script>
-// @ is an alias to /src
-
 export default {
   name: 'Projects'
 }
