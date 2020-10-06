@@ -1,0 +1,35 @@
+{
+  "app": {
+    "name": "Galvin Gao"
+  },
+  "menu": {
+    "languages": "语言",
+    "home": "首页",
+    "projects": "项目"
+  },
+  "projects": {
+    "_name": "我的项目",
+    "category": {
+      "_name": "类别",
+      "website": "网站",
+      "activity": "活动",
+      "video": "视频"
+    },
+    "tags": {
+      "_name": "标签",
+      "frontend": "前端开发",
+      "backend": "后端开发",
+      "infrastructure": "架构设计",
+      "ios": "iOS 开发",
+      "android": "Android 开发",
+      "initiative": "项目创始",
+      "team-management": "团队管理",
+      "premiere-pro": "Premiere Pro",
+      "after-effects": "After Effects"
+    },
+    "more": "查看更多..."
+  },
+  "footer": {
+    "source": "本站源代码"
+  }
+}

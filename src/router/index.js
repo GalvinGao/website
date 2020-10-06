@@ -1,16 +1,16 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import Home from '../views/Home.vue'
-import Projects from "@/views/Projects";
+import Home from '@/views/Home'
+import ProjectIndex from "@/views/Project/ProjectIndex";
 
 Vue.use(VueRouter)
 
 const router = new VueRouter({
   mode: 'history',
   base: process.env.BASE_URL,
-  // scrollBehavior() { // params: (to, from, savedPosition)
-  //   return { x: 0, y: 0 }
-  // },
+  scrollBehavior() { // params: (to, from, savedPosition)
+    return { x: 0, y: 0 }
+  },
   routes: [
     {
       path: '/',
@@ -24,22 +24,11 @@ const router = new VueRouter({
     {
       path: '/projects',
       name: 'Projects',
-      component: Projects,
+      component: ProjectIndex,
       meta: {
         icon: 'mdi-view-list',
         i18n: 'menu.projects'
-      },
-      // children: [
-      //   {
-      //     path: ':zoneId/:stageId',
-      //     name: 'ReportByZone_Selected',
-      //     component: Report,
-      //     props: true,
-      //     meta: {
-      //       i18n: 'menu.report'
-      //     },
-      //   }
-      // ]
+      }
     }
   ]
 })

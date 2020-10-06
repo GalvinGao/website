@@ -1,3 +1,30 @@
+const styleMap = {
+  debug: {
+    background: "#424242",
+    text: "#fff"
+  },
+  info: {
+    background: "#1976D2",
+    text: "#fff"
+  },
+  warn: {
+    background: "#F57C00",
+    text: "#fff"
+  },
+  error: {
+    background: "#D32F2F",
+    text: "#fff"
+  },
+  fatal: {
+    background: "#c700ff",
+    text: "#fff"
+  },
+  log: {
+    background: "#512DA8",
+    text: "#fff"
+  }
+}
+
 class Console {
   static debug (component, ...content) {
     this._render("debug", component, ...content)
@@ -12,7 +39,7 @@ class Console {
     this._render("error", component, ...content);
   }
   static fatal (component, ...content) {
-    this._render("error", component, ...content);
+    this._render("fatal", component, ...content);
   }
   static log (component, ...content) {
     this._render("log", component, ...content)
@@ -22,25 +49,12 @@ class Console {
    * @private
    */
   static _render (level, component, ...content) {
-    const PROD_IGNORE = ["debug"];
-    if (
-      process.env.NODE_ENV === "production" &&
-      (PROD_IGNORE.includes(level))
-    ) return;
-    // const now = new Date();
-    // const date = `${now.getDate()} ${now.getHours()}:${now.getMinutes()}:${now.getSeconds()}.${now.getMilliseconds()}`;
-
-    let prefix;
-
-    if (process.env.NODE_ENV === "production") {
-      prefix = [`(${level})`, `[${component}]`];
-    } else {
-      prefix = [
-        `%c${level}%c${component}`,
-        "background: #FF9800; color: #000; padding: 2px 4px; border-radius: 4px; margin-right: 4px; font-weight: 900; font-size: 10px;",
-        "background: #673AB7; color: #fff; padding: 2px 4px; border-radius: 4px; font-weight: 700; font-size: 10px;"
-      ];
-    }
+    const styles = styleMap[level]
+    const prefix = [
+      `%c${level}%c${component}`,
+      `background: ${styles.background}; color: ${styles.text}; padding: 2px 4px; border-radius: 4px; margin-right: 4px; font-weight: 900; font-size: 10px;`,
+      "background: #673AB7; color: #fff; padding: 2px 4px; border-radius: 4px; font-weight: 700; font-size: 10px;"
+    ];
 
     if (console[level]) {
       console[level](...prefix, ...content)

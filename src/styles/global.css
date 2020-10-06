@@ -55,11 +55,10 @@
     opacity: 0;
 }
 .slide-fade-leave-to {
-    transform: scale(0.9);
+    transform: scale(0.95);
     filter: blur(10px) saturate(0);
     opacity: 0;
 }
-
 
 html, body {
     background: #121212

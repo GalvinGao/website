@@ -1,6 +1,34 @@
 {
+  "app": {
+    "name": "Galvin Gao"
+  },
   "menu": {
+    "languages": "Language",
     "home": "Home",
     "projects": "Projects"
+  },
+  "projects": {
+    "_name": "Projects",
+    "category": {
+      "_name": "Category",
+      "website": "Website",
+      "activity": "Activity"
+    },
+    "tags": {
+      "_name": "Tags",
+      "frontend": "Frontend",
+      "backend": "Backend",
+      "infrastructure": "Infrastructure",
+      "ios": "iOS Development",
+      "android": "Android Development",
+      "initiative": "Initiative",
+      "team-management": "Team Management",
+      "premiere-pro": "Premiere Pro",
+      "after-effects": "After Effects"
+    },
+    "more": "More..."
+  },
+  "footer": {
+    "source": "Site Source"
   }
 }

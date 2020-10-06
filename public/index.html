@@ -13,5 +13,23 @@
     </noscript>
     <div id="app"></div>
     <!-- built files will be auto injected -->
+
+    <script type="text/javascript">
+      if (!document.location.origin.indexOf("localhost")) {
+        var _paq = window._paq = window._paq || [];
+        /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+        _paq.push(['trackPageView']);
+        _paq.push(['enableLinkTracking']);
+        (function() {
+          var u="//probe.imgal.vin/";
+          _paq.push(['setTrackerUrl', u+'main.php']);
+          _paq.push(['setSiteId', '2']);
+          var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+          g.type='text/javascript'; g.async=true; g.src=u+'main.js'; s.parentNode.insertBefore(g,s);
+        })();
+      }
+    </script>
+    <noscript><p><img src="//probe.imgal.vin/main.php?idsite=2&rec=1" style="border:0;" alt="" /></p></noscript>
+
   </body>
 </html>
