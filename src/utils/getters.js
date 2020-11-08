@@ -1,4 +1,4 @@
-import projects from "@/models/projects.js"
+import projects from "@/models/projects"
 import strings from "@/utils/strings";
 import marshaller from "@/utils/marshaller";
 
@@ -13,10 +13,15 @@ export default {
         ]
       ))
         .map(el => {
-          el.attachments = el.attachments.map(attachment => strings.translateBulk(attachment, ["title"]))
+          return {
+            ...el,
 
-          el.tags = marshaller.project.tags(el.tags)
-          return el
+            tags: marshaller.project.tags(el.tags),
+            languages: marshaller.project.languages(el.languages),
+            attachments: el.attachments.map(attachment => {
+              return strings.translateBulk(attachment, ["title"])
+            })
+          }
         })
     },
     bySlug (slug) {

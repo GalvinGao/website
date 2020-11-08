@@ -2,8 +2,8 @@
     padding: 8px;
 }
 
-.safe-area--navigation-drawer {
-    width: 300px !important;
+.transition-all {
+    transition: all .225s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
 @supports(padding: calc(max(1px, 2px))) {
@@ -36,10 +36,6 @@
     .safe-area--navigation {
         padding-left: calc(max(env(safe-area-inset-left), 8px)) !important;
     }
-
-    .safe-area--navigation-drawer {
-        width: calc(env(safe-area-inset-left) + 300px) !important;
-    }
 }
 
 
@@ -62,4 +58,8 @@
 
 html, body {
     background: #121212
+}
+
+.img-backdrop-blur > .v-image__image {
+    filter: blur(10px)
 }

@@ -17,6 +17,10 @@
     },
     "tags": {
       "_name": "标签",
+      "_card": {
+        "score": "贡献量",
+        "scoreDescription": "贡献量：在此项目内此标签的相对贡献量，10 分代表很大贡献。"
+      },
       "frontend": "前端开发",
       "backend": "后端开发",
       "infrastructure": "架构设计",
@@ -27,7 +31,14 @@
       "premiere-pro": "Premiere Pro",
       "after-effects": "After Effects"
     },
-    "more": "查看更多..."
+    "languages": {
+      "_name": "支持语言",
+      "zh-hans": "简体中文",
+      "en-US": "英文",
+      "ko-KR": "韩文",
+      "ja-JP": "日文"
+    },
+    "more": "查看更多"
   },
   "footer": {
     "source": "本站源代码"

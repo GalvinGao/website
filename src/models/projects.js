@@ -6,6 +6,12 @@ export default [
       "zh": "企鹅物流数据统计"
     },
     "category": "website",
+    "languages": [
+      "zh-hans",
+      "en-US",
+      "ko-KR",
+      "ja-JP"
+    ],
     "tags": [
       {
         "tag": "frontend",
@@ -63,6 +69,10 @@ export default [
       "zh": "面向 COVID-19 疫区内外民众和医疗机构的多维度信息整合平台"
     },
     "category": "website",
+    "languages": [
+      "zh-hans",
+      "en-US"
+    ],
     "tags": [
       {
         "tag": "frontend",
@@ -102,7 +112,7 @@ export default [
         "icon": "mdi-account-multiple",
         "color": "orange",
         "title_i18n": {
-          "en": "Org",
+          "en": "Org Homepage",
           "zh": "团队主页"
         },
         "content": "https://wuhan.support"
@@ -130,6 +140,10 @@ export default [
       "zh": "为 2020 届毕业生制作的所有视频及合作制作视频的索引网站"
     },
     "category": "website",
+    "languages": [
+      "zh-hans",
+      "en-US"
+    ],
     "tags": [
       {
         "tag": "frontend",
@@ -179,6 +193,10 @@ export default [
       "zh": "使用 Vue.js 开发的在线纪念相册：通过人脸识别对过去所有存档照片按人分类，让同学们通过浏览网站找到属于自己的难忘时刻"
     },
     "category": "website",
+    "languages": [
+      "zh-hans",
+      "en-US"
+    ],
     "tags": [
       {
         "tag": "frontend",
@@ -232,6 +250,9 @@ export default [
       "zh": "为勤礼外语中学 2020 届毕业生制作的毕业纪念视频"
     },
     "category": "video",
+    "languages": [
+      "zh-hans"
+    ],
     "tags": [
       {
         "tag": "premiere-pro",
@@ -261,16 +282,19 @@ export default [
     ]
   },
   {
-    "slug": "kinglee-graduation3",
+    "slug": "ihomework",
     "title_i18n": {
-      "en": "\"Reminiscences\"",
-      "zh": "「忆」毕业纪念"
+      "en": "iHomework",
+      "zh": "iHomework"
     },
     "subtitle_i18n": {
       "en": "(In Collection: Kinglee High School 2020 Graduation Documentary) Documentary Video that I made myself",
       "zh": ""
     },
     "category": "website",
+    "languages": [
+      "zh-hans"
+    ],
     "tags": [
       {
         "tag": "premiere-pro",
@@ -279,10 +303,6 @@ export default [
       {
         "tag": "after-effects",
         "score": 7,
-      },
-      {
-        "tag": "trapcode-particular",
-        "score": 5,
       }
     ],
     "hero": "projects/hero/graduation-2020.jpg",

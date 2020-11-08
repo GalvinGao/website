@@ -56,6 +56,28 @@
             </v-list-item-subtitle>
           </v-list-item-content>
         </v-list-item>
+
+        <v-list-item>
+          <v-list-item-action>
+            <v-icon>
+              mdi-translate
+            </v-icon>
+          </v-list-item-action>
+
+          <v-list-item-content>
+            <v-list-item-title>
+              {{ $t('projects.languages._name') }}
+            </v-list-item-title>
+            <v-list-item-subtitle class="nowrap">
+              <LanguageTag
+                v-for="language in project.languages"
+                :key="`${project.slug}-${language.id}`"
+
+                :language="language"
+              />
+            </v-list-item-subtitle>
+          </v-list-item-content>
+        </v-list-item>
       </v-list>
     </v-card-text>
 
@@ -84,9 +106,10 @@
 <script>
 import ProjectTag from "@/components/projects/ProjectTag";
 import CDN from "@/mixins/CDN";
+import LanguageTag from "@/components/projects/LanguageTag";
 export default {
   name: "Project",
-  components: {ProjectTag},
+  components: {LanguageTag, ProjectTag},
   mixins: [CDN],
   props: {
     project: {
@@ -96,7 +119,6 @@ export default {
   },
   computed: {
     hyperlinks() {
-      console.log(this.project)
       return this.project.attachments
           .filter(el => el.type === "hyperlink");
     }

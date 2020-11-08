@@ -8,7 +8,6 @@
     <template v-slot:activator="{ on }">
       <v-btn
         icon
-        class="mx-1"
         v-on="on"
       >
         <v-icon class="switch-icon">
@@ -59,7 +58,7 @@ export default {
       localizations: [
         {
           id: 'zh',
-          name: '中文'
+          name: '简体中文'
         },
         {
           id: 'en',

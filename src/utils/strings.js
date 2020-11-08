@@ -5,6 +5,10 @@ function getLocaleMessage(object, localeKey, key, language) {
   return object[localeKey][language] || object[localeKey][I18n.fallbackLocale] || object[key] || "";
 }
 
+// function resolve (object, key) {
+//   return key.split('.').reduce((a, v) => a[v], object)
+// }
+
 function translate (object, key) {
   let locale = I18n.locale;
   let localeKey = `${key}_i18n`;

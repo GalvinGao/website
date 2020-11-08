@@ -16,6 +16,10 @@
     },
     "tags": {
       "_name": "Tags",
+      "_card": {
+        "score": "Score",
+        "scoreDescription": "Score: the relative contribution of this tag in this project. 10 = lots of the contributions."
+      },
       "frontend": "Frontend",
       "backend": "Backend",
       "infrastructure": "Infrastructure",
@@ -26,7 +30,14 @@
       "premiere-pro": "Premiere Pro",
       "after-effects": "After Effects"
     },
-    "more": "More..."
+    "languages": {
+      "_name": "Languages Supported",
+      "zh-hans": "Simplified Chinese",
+      "en-US": "English",
+      "ko-KR": "Korean",
+      "ja-JP": "Japanese"
+    },
+    "more": "More"
   },
   "footer": {
     "source": "Site Source"

@@ -46,7 +46,7 @@
         </v-list-item>
 
         <v-divider class="mb-1" />
-        
+
         <Navigation
           v-for="route in routes"
           :key="route.name"
@@ -67,6 +67,7 @@
         <v-img
           v-bind="props"
           gradient="to top right, rgba(19,84,122,.5), rgba(128,208,199,.8)"
+          max-width="100%"
         />
       </template>
 
@@ -92,15 +93,6 @@
       <v-spacer />
 
       <LocaleSwitcher />
-
-      <!--      <v-progress-linear-->
-      <!--        :active="pending"-->
-      <!--        :indeterminate="pending"-->
-      <!--        absolute-->
-      <!--        bottom-->
-      <!--        class="width: 100%"-->
-      <!--        color="deep-purple accent-4"-->
-      <!--      />-->
     </v-app-bar>
     <v-main
       class="safe-area--v-content"
@@ -128,6 +120,7 @@ import EntryHook from "@/mixins/hooks/entry"
 
 export default {
   name: 'App',
+  // eslint-disable-next-line vue/no-unused-components
   components: {LocaleSwitcher, Footer, Navigation},
   mixins: [EntryHook],
   data () {
