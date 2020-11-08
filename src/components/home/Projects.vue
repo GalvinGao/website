@@ -8,7 +8,7 @@
         cols="12"
         class="text-center"
       >
-        <h1 class="mt-12 display-1">
+        <h1 class="mt-4 display-1">
           {{ $t('projects._name') }}
         </h1>
       </v-col>

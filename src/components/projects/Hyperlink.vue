@@ -28,10 +28,7 @@
         {{ hyperlink.title }}
       </v-btn>
     </template>
-    <v-card
-      width="350"
-      class="card-up-arrow"
-    >
+    <v-card width="350">
       <v-fade-transition>
         <v-overlay
           v-if="hoverState"
@@ -39,7 +36,7 @@
           :opacity="0.8"
           class="border-white-1"
         >
-          <div class="scroll-to-right-animation scale-15">
+          <div class="scroll-to-right-animation">
             <v-icon
               x-large
             >
@@ -59,17 +56,18 @@
         class="blue darken-4"
       >
         <v-list-item>
-          <v-list-item-avatar>
-            <v-icon>
-              mdi-link
-            </v-icon>
+          <v-list-item-avatar tile>
+            <!--            <v-icon>-->
+            <!--              mdi-link-->
+            <!--            </v-icon>-->
+            <URLIcon :url="hyperlink.content" />
           </v-list-item-avatar>
           <v-list-item-content>
             <v-list-item-title>
               {{ hyperlink.title }}
             </v-list-item-title>
             <v-list-item-subtitle class="monospace v-list--text-no-wrap">
-              {{ hyperlink.content }}
+              <ColoredURL :url="hyperlink.content" />
             </v-list-item-subtitle>
           </v-list-item-content>
           <v-list-item-icon>
@@ -105,8 +103,11 @@
 </template>
 
 <script>
+import ColoredURL from "@/components/global/ColoredURL";
+import URLIcon from "@/components/global/URLIcon";
 export default {
   name: "Hyperlink",
+  components: {URLIcon, ColoredURL},
   props: {
     hyperlink: {
       type: Object,

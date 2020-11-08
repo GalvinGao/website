@@ -1,4 +1,5 @@
 import projects from "@/models/projects"
+import sites from "@/models/sites"
 import strings from "@/utils/strings";
 import marshaller from "@/utils/marshaller";
 
@@ -26,7 +27,16 @@ export default {
     },
     bySlug (slug) {
       return this.all()
-        .filter(el => el.slug === slug)
+        .find(el => el.slug === slug)
+    }
+  },
+  sites: {
+    all () {
+      return sites
+    },
+    byURL (url) {
+      return this.all()
+        .find(el => el.matcher(url))
     }
   }
 }

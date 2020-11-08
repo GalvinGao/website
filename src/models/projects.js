@@ -75,12 +75,12 @@ export default [
     ],
     "tags": [
       {
-        "tag": "frontend",
+        "tag": "initiative",
         "score": 10,
       },
       {
-        "tag": "initiative",
-        "score": 9,
+        "tag": "frontend",
+        "score": 10,
       },
       {
         "tag": "backend",
@@ -146,11 +146,11 @@ export default [
     ],
     "tags": [
       {
-        "tag": "frontend",
+        "tag": "initiative",
         "score": 10,
       },
       {
-        "tag": "initiative",
+        "tag": "frontend",
         "score": 10,
       },
       {
@@ -199,11 +199,11 @@ export default [
     ],
     "tags": [
       {
-        "tag": "frontend",
+        "tag": "initiative",
         "score": 10,
       },
       {
-        "tag": "initiative",
+        "tag": "frontend",
         "score": 10,
       },
       {
@@ -255,11 +255,11 @@ export default [
     ],
     "tags": [
       {
-        "tag": "premiere-pro",
+        "tag": "initiative",
         "score": 10,
       },
       {
-        "tag": "initiative",
+        "tag": "premiere-pro",
         "score": 10,
       },
       {
@@ -288,8 +288,8 @@ export default [
       "zh": "iHomework"
     },
     "subtitle_i18n": {
-      "en": "(In Collection: Kinglee High School 2020 Graduation Documentary) Documentary Video that I made myself",
-      "zh": ""
+      "en": "Distribute homework information to classmates as well as toolkit for both studying and entertaining with iPad",
+      "zh": "iHomework 意在为老师分发包括作业要求与指引、备考资料和大学校访电子手册等的课业信息，同时给使用 iPad 学习的大家提供学习辅助与课余娱乐工具"
     },
     "category": "website",
     "languages": [
@@ -297,11 +297,67 @@ export default [
     ],
     "tags": [
       {
-        "tag": "premiere-pro",
+        "tag": "initiative",
         "score": 10,
       },
       {
-        "tag": "after-effects",
+        "tag": "frontend",
+        "score": 10,
+      },
+      {
+        "tag": "infrastructure",
+        "score": 10,
+      },
+      {
+        "tag": "backend",
+        "score": 2,
+      }
+    ],
+    "hero": "projects/hero/graduation-2020.jpg",
+    "attachments": [
+      {
+        "type": "hyperlink",
+        "icon": "mdi-link-box",
+        "color": "primary",
+        "title_i18n": {
+          "en": "Website",
+          "zh": "网站"
+        },
+        "content": "https://gh.iblueg.cn/iHomework/ihw"
+      },
+      {
+        "type": "hyperlink",
+        "icon": "mdi-github-circle",
+        "color": "secondary",
+        "title_i18n": {
+          "en": "Source",
+          "zh": "源代码"
+        },
+        "content": "https://github.com/GalvinGao/iHomework"
+      }
+    ]
+  },
+  {
+    "slug": "uv2018-website",
+    "title_i18n": {
+      "en": "MIT Universal Village 2018 Website & Portal",
+      "zh": "MIT Universal Village 2018 官网与管理系统"
+    },
+    "subtitle_i18n": {
+      "en": "Developed frontend of MIT Universal Village 2018 Conference official website & management portal",
+      "zh": "开发 MIT Universal Village 于 2018 举办的会议官网与对应会议管理系统前端"
+    },
+    "category": "website",
+    "languages": [
+      "zh-hans"
+    ],
+    "tags": [
+      {
+        "tag": "frontend",
+        "score": 10,
+      },
+      {
+        "tag": "infrastructure",
         "score": 7,
       }
     ],
@@ -315,7 +371,7 @@ export default [
           "en": "Website",
           "zh": "网站"
         },
-        "content": "https://penguin-stats.cn"
+        "content": "https://uv2018.universal-village.org"
       },
       {
         "type": "hyperlink",
@@ -325,7 +381,55 @@ export default [
           "en": "Source",
           "zh": "源代码"
         },
-        "content": "https://github.com/penguin-statistics/frontend-v2"
+        "content": "https://github.com/universal-village/uv-2018"
+      }
+    ]
+  },
+  {
+    "slug": "wartime-aide",
+    "title_i18n": {
+      "en": "Official Site of Wartime Aide",
+      "zh": "Wartime Aide 官网"
+    },
+    "subtitle_i18n": {
+      "en": "Wartime Aide is a student-run Massachusetts 501(c)3 non-profit charity focused on educating high schoolers about refugee issues. Developed new website which helped the organization to save costs from Wix.com and to provide both RSS and Podcast subscription services.",
+      "zh": "为 Wartime Aide — 呼吁当代高中生重视关于难民的相关社会问题、创立于 Massachusetts 的一个 501(c)3 非盈利组织 — 搭建了新的网站，以期减少网站运营开销、提供 RSS 及 Podcast 服务。"
+    },
+    "category": "website",
+    "languages": [
+      "zh-hans"
+    ],
+    "tags": [
+      {
+        "tag": "frontend",
+        "score": 10,
+      },
+      {
+        "tag": "infrastructure",
+        "score": 7,
+      }
+    ],
+    "hero": "projects/hero/graduation-2020.jpg",
+    "attachments": [
+      {
+        "type": "hyperlink",
+        "icon": "mdi-link-box",
+        "color": "primary",
+        "title_i18n": {
+          "en": "Staging Website",
+          "zh": "网站 (Staging)"
+        },
+        "content": "https://wartimeaide.netlify.app"
+      },
+      {
+        "type": "hyperlink",
+        "icon": "mdi-github-circle",
+        "color": "secondary",
+        "title_i18n": {
+          "en": "Source",
+          "zh": "源代码"
+        },
+        "content": "https://github.com/wartimeaide/website"
       }
     ]
   }
