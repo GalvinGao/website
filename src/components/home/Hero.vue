@@ -2,7 +2,7 @@
   <v-parallax
     dark
     :src="require('@/assets/hero.jpg')"
-    :height="$vuetify.breakpoint.smAndDown ? 550 : 700"
+    :height="$vuetify.breakpoint.smAndDown ? 650 : 700"
     class="elevation-12"
   >
     <v-row
@@ -35,7 +35,7 @@
         md="7"
         lg="7"
         xl="7"
-        class="text-md-left text-lg-left text-xl-left"
+        class="text-md-left text-lg-left text-xl-left px-6"
       >
         <h1 class="display-3 font-weight-light mb-3 ml-n1">
           Galvin Gao

@@ -8,6 +8,7 @@
     <template v-slot:activator="{ on }">
       <v-btn
         icon
+        class="mr-0"
         v-on="on"
       >
         <v-icon class="switch-icon">

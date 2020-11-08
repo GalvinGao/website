@@ -277,7 +277,7 @@ export default [
           "en": "Watch",
           "zh": "观看视频"
         },
-        "content": "https://www.bilibili.com/video/av413588486"
+        "content": "https://bilibili.com/video/av413588486"
       }
     ]
   },

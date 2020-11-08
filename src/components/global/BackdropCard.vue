@@ -52,21 +52,21 @@ export default {
   opacity: 0.25;
   transform-origin: bottom right;
 }
-.backdrop-card--hoverable .backdrop-icon, .backdrop-card--hoverable ::v-deep span {
+.backdrop-card--hoverable .backdrop-icon, .backdrop-card--hoverable ::v-deep .d-flex {
   transition: transform .225s cubic-bezier(.35,1.61,.73,1), opacity .225s cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 .backdrop-card--hoverable:hover .backdrop-icon {
   opacity: 0.8;
   transform: scale(1.05) rotate(2deg);
 }
-.backdrop-card--hoverable:hover ::v-deep span {
+.backdrop-card--hoverable:hover ::v-deep .d-flex {
   transform: scale(1.15) rotate(1deg);
 }
 .backdrop-card--hoverable ::v-deep .v-image__image {
-  transition: all 1s cubic-bezier(.1,.5,.4,1);
+  transition: all .475s cubic-bezier(.1,.5,.4,1);
 }
 .backdrop-card--hoverable:hover ::v-deep .v-image__image {
-  transform: scale(1.7) rotate(-3deg);
+  transform: scale(1.6) rotate(-3deg);
 }
 
 .backdrop-card--darken .backdrop-icon {
