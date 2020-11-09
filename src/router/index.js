@@ -3,6 +3,7 @@ import VueRouter from 'vue-router'
 import Home from '@/views/Home'
 import ProjectIndex from "@/views/Project/ProjectIndex";
 import Console from "@/utils/Console";
+import ProjectDetail from "@/views/Project/ProjectDetail";
 
 Vue.use(VueRouter)
 
@@ -26,11 +27,22 @@ const router = new VueRouter({
     },
     {
       path: '/projects',
-      name: 'Projects',
+      name: 'ProjectList',
       component: ProjectIndex,
       meta: {
         icon: 'mdi-view-list',
         i18n: 'menu.projects'
+      }
+    },
+    {
+      path: '/projects/:slug',
+      name: 'ProjectDetail',
+      component: ProjectDetail,
+      props: true,
+      meta: {
+        icon: 'mdi-view-list',
+        i18n: 'menu.projects',
+        hide: true
       }
     }
   ]

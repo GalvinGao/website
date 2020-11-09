@@ -60,7 +60,7 @@
             <!--            <v-icon>-->
             <!--              mdi-link-->
             <!--            </v-icon>-->
-            <URLIcon :url="hyperlink.content" />
+            <SiteIcon :url="hyperlink.content" />
           </v-list-item-avatar>
           <v-list-item-content>
             <v-list-item-title>
@@ -104,10 +104,10 @@
 
 <script>
 import ColoredURL from "@/components/global/ColoredURL";
-import URLIcon from "@/components/global/URLIcon";
+import SiteIcon from "@/components/global/SiteIcon";
 export default {
   name: "Hyperlink",
-  components: {URLIcon, ColoredURL},
+  components: {SiteIcon, ColoredURL},
   props: {
     hyperlink: {
       type: Object,

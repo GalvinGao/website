@@ -25,7 +25,7 @@
 import getters from "@/utils/getters";
 
 export default {
-  name: "URLIcon",
+  name: "SiteIcon",
   props: {
     url: {
       type: String,

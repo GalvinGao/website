@@ -92,6 +92,21 @@
         :hyperlink="hyperlink"
       />
     </v-card-actions>
+    <v-divider />
+
+    <v-card-actions>
+      <v-btn
+        block
+        text
+        large
+        :to="{name: 'ProjectDetail', params: {slug: project.slug}}"
+      >
+        了解更多
+        <v-icon>
+          mdi-chevron-right
+        </v-icon>
+      </v-btn>
+    </v-card-actions>
   </v-card>
 </template>
 

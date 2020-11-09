@@ -56,12 +56,11 @@
     </v-navigation-drawer>
     <v-app-bar
       fade-img-on-scroll
-      shrink-on-scroll
-      prominent
+      :scroll-threshold="64"
       :src="require('@/assets/header.jpg')"
       app
       dark
-      class="flex-column"
+      class="flex-column backdrop-blur navbar"
     >
       <template v-slot:img="{ props }">
         <v-img
@@ -96,7 +95,7 @@
     </v-app-bar>
     <v-main
       class="safe-area--v-content"
-      style="margin-top: 72px"
+      style="margin-top: 8px"
     >
       <transition
         name="slide-fade"
@@ -134,9 +133,3 @@ export default {
   },
 }
 </script>
-
-<style scoped>
-  .logo {
-    filter: drop-shadow(0 0 5px rgba(0, 0, 0, .5));
-  }
-</style>

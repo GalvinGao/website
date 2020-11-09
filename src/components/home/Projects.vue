@@ -43,7 +43,7 @@
           >
             <BackdropCard
               hover
-              :to="{ name: 'Projects' }"
+              :to="{ name: 'ProjectList' }"
               color="transparent"
               class="d-flex flex-column align-center justify-center pa-0"
               style="height: 100%; border: 1px solid white !important; padding: 0 !important;"

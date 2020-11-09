@@ -38,7 +38,8 @@
       "ko-KR": "韩文",
       "ja-JP": "日文"
     },
-    "more": "查看更多"
+    "more": "查看更多",
+    "unknown": "未知项目"
   },
   "footer": {
     "source": "本站源代码"

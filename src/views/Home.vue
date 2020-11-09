@@ -13,5 +13,13 @@ export default {
   name: 'Home',
   // eslint-disable-next-line vue/no-unused-components
   components: {Projects, Hero},
+  metaInfo: {
+    meta: [
+      {
+        name: 'description',
+        content: "Welcome to the portfolio of Galvin Gao, which includes lots of projects that I have contributed to :D"
+      }
+    ]
+  }
 }
 </script>
