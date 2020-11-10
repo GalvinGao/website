@@ -22,7 +22,7 @@
           class="glow"
         >
           <v-img
-            :src="require('@/assets/avatar.jpeg')"
+            :src="require('@/assets/avatar-2dim.jpg')"
             aspect-ratio="1"
             contain
             height="256px"
