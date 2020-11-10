@@ -54,7 +54,7 @@
                 </v-icon>
               </template>
               <v-img
-                :src="require('@/assets/header.jpg')"
+                :src="require('@/assets/header-high.jpg')"
                 class="img-backdrop-blur"
               >
                 <v-row

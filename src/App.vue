@@ -3,7 +3,7 @@
     <v-navigation-drawer
       v-model="drawer"
       app
-      class="safe-area--navigation-drawer"
+      class="safe-area--navigation-drawer navigation-drawer-background"
       width="300px"
     >
       <v-list
@@ -52,12 +52,36 @@
           :key="route.name"
           :route="route"
         />
+
+        <v-spacer />
+
+        <v-footer
+          absolute
+          padless
+          class="d-flex flex-row justify-center transparent mb-6"
+        >
+          <v-chip outlined>
+            <v-avatar left>
+              <v-img
+                :src="require('@/assets/avatar-2dim.jpg')"
+                :aspect-ratio="1"
+                height="32"
+                class="logo"
+                contain
+              />
+            </v-avatar>
+
+            <span class="monospace">
+              Galvin
+            </span>
+          </v-chip>
+        </v-footer>
       </v-list>
     </v-navigation-drawer>
     <v-app-bar
       fade-img-on-scroll
       :scroll-threshold="64"
-      :src="require('@/assets/header.jpg')"
+      :src="require('@/assets/header-wide.jpg')"
       app
       dark
       class="flex-column backdrop-blur navbar"

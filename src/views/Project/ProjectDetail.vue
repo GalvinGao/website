@@ -13,11 +13,11 @@
         aspect-ratio="1.5"
         gradient="to top, rgba(18, 18, 18, 1), rgba(18, 18, 18, .7) 10%, rgba(18, 18, 18, .3) 25%, rgba(18, 18, 18, .05)"
       >
-        <div class="d-flex backdrop-title fill-height mt-4">
-          <div class="backdrop-title-content mx-12">
-            {{ project.title_i18n.en }}
-          </div>
-        </div>
+        <!--        <div class="d-flex backdrop-title fill-height mt-4">-->
+        <!--          <div class="backdrop-title-content mx-12">-->
+        <!--            {{ project.title_i18n.en }}-->
+        <!--          </div>-->
+        <!--        </div>-->
       </v-img>
     </v-col>
     <v-container
