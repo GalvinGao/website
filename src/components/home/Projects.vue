@@ -55,6 +55,8 @@
               </template>
               <v-img
                 :src="require('@/assets/header-high.jpg')"
+                aspect-ratio="1"
+                width="1000"
                 class="img-backdrop-blur"
               >
                 <v-row
